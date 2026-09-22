@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Survey</title>
+<meta name="description" content="Answer the same questions MIT asked its community about AI in 2026, then compare our class with MIT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <h1>AI Survey</h1>
+    <p class="eyebrow">SCIE 2020 - demo - AI Generated</p>
+    <p class="hero-lede">In 2026 MIT asked its whole community how they use AI and how they feel about it. Same questions, our class. Then we see how Humber compares.</p>
+    <nav class="tabs" aria-label="Views">
+      <button class="tab" data-view="survey" role="tab">1 &middot; Take the survey</button>
+      <button class="tab" data-view="results" role="tab">2 &middot; Class results</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============ VIEW 1: SURVEY ============ -->
+<div class="view" id="view-survey">
+<form id="survey-form" novalidate>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Before you start</p>
+      <h2>Where these questions come from</h2>
+      <p>In spring 2026 an MIT committee surveyed 1,632 students and instructors about AI, and a second campus-wide survey reached about 8,200 people. Their report is the source of every question here. The only change is that <b>MIT</b> has become <b>Humber</b>.</p>
+      <p>It is anonymous and takes about five minutes. Skip anything you like. You will see MIT's answers only after you submit, so your answers are yours, not theirs.</p>
+    </div>
+    <div class="panel intro">
+      <span class="cap">The plan</span>
+      <ol class="steps">
+        <li>Answer the questions on the right-hand side.</li>
+        <li>Press <b>Submit</b> at the bottom.</li>
+        <li>Open <b>Class results</b> to see everyone's answers next to MIT's.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Usage</p>
+      <h2>Which tools, and how often?</h2>
+      <p>&ldquo;AI&rdquo; is a crowd of products. ChatGPT, Claude, Gemini and Copilot are all chat assistants built on large language models, but from different companies. A <i>self-hosted</i> model is one that runs on your own computer rather than in a company's data centre.</p>
+      <p>&ldquo;Academic activities&rdquo; means anything to do with school: assignments, studying, reading, planning.</p>
+    </div>
+    <div class="panel" data-slot="tools"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Usage</p>
+      <h2>What do you use it for?</h2>
+      <p>The same tool can play very different roles: a search engine, an editor, a translator, a ghost-writer. MIT found the mix matters more than the raw amount of use, because some uses replace thinking and others support it.</p>
+    </div>
+    <div class="panel" data-slot="tasks"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Attitudes</p>
+      <h2>How do you feel about it?</h2>
+      <p>Eight statements, from &ldquo;I need this for my career&rdquo; to &ldquo;I worry I'm becoming dependent.&rdquo; People often agree with both at once. That tension is the whole conversation about AI in education, so answer honestly rather than consistently.</p>
+    </div>
+    <div class="panel" data-slot="attitudes"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Rules</p>
+      <h2>Where is the line?</h2>
+      <p>Suppose you were writing up a real research project. Which of these jobs is it fine to hand to an AI? Fixing grammar feels different from writing the hypothesis, and reviewing someone else's confidential work feels different again.</p>
+      <p>There is no official answer sheet. MIT's own community disagreed with itself on many of these.</p>
+    </div>
+    <div class="panel" data-slot="research"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Concerns</p>
+      <h2>What holds you back?</h2>
+      <p>Four common reasons people hesitate. <b>Hallucinations</b> are confident answers that are simply made up. <b>Ethics of training</b> is about the writing, art and data the models learned from, and whether anyone agreed to that. The last two are about the world outside the screen.</p>
+    </div>
+    <div class="panel">
+      <div data-slot="concerns"></div>
+      <div data-slot="concern_other" class="stack"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 2 &mdash; Quality of life</p>
+      <h2>The bigger picture</h2>
+      <p>The second survey went to everyone at MIT: students, professors, office staff, the people who run the buildings. It asked fewer questions, but broader ones. First, simply: how often?</p>
+    </div>
+    <div class="panel" data-slot="qol_freq"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 2 &mdash; Quality of life</p>
+      <h2>Five sliders</h2>
+      <p>Each line is a pair of opposites. Pick the number closest to how you feel. A <b>3</b> means you are in the middle, or torn.</p>
+      <p>Notice these are about you, not about the technology: does it make <i>you</i> feel more capable, or more replaceable?</p>
+    </div>
+    <div class="panel" data-slot="dims"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 2 &mdash; Guidance</p>
+      <h2>Has anyone told you the rules?</h2>
+      <p>The last question is about the institution rather than the tools. Do you feel Humber has explained when AI is welcome in your coursework and when it is not?</p>
+    </div>
+    <div class="panel" data-slot="guidance"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Done</p>
+      <h2>Send it in</h2>
+      <p>Your answers are saved without your name and added to the class total. Once you have submitted, open <b>Class results</b> to see the room.</p>
+    </div>
+    <div class="panel submit-panel">
+      <button type="submit" class="btn primary" id="submit-btn">Submit my answers</button>
+      <p class="status" id="submit-status"></p>
+    </div>
+  </section>
+
+</form>
+</div>
+
+<!-- ============ VIEW 2: RESULTS ============ -->
+<div class="view" id="view-results" hidden>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Results</p>
+      <h2>The room versus MIT</h2>
+      <p>Every chart shows two bars: our class on top and MIT underneath, on the same scale. MIT's numbers are read from the charts in their August 2026 report, so treat them as close rather than exact.</p>
+      <p>Part 1 compares us with everyone who answered MIT's committee survey, students and instructors together. Part 2 compares us with MIT undergraduates specifically.</p>
+    </div>
+    <div class="panel toolbar">
+      <div class="stat"><span class="stat-n" id="resp-count">0</span><span class="stat-l">responses from this class</span></div>
+      <p class="chart-note" id="store-note"></p>
+      <div class="controls">
+        <button type="button" class="btn" id="refresh-btn">Refresh</button>
+        <label class="check inline"><input type="checkbox" id="show-mit" checked><span class="box"></span>Show MIT</label>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Usage</p>
+      <h2>Which tools</h2>
+      <p>At MIT, ChatGPT was the clear favourite: 44% used it often or very often. Claude and Gemini were a distant second and third, and very few people ran models on their own machines. The business school (Sloan) used everything more than everyone else.</p>
+    </div>
+    <div class="panel" data-chart="tools"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Usage</p>
+      <h2>What for</h2>
+      <p>MIT students mostly used AI to help with code, to look things up, to tidy their own writing and to summarize. Only about one in eight used it to write text from scratch. The most common uses were the &ldquo;support&rdquo; ones, not the &ldquo;do it for me&rdquo; ones.</p>
+    </div>
+    <div class="panel" data-chart="tasks"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Attitudes</p>
+      <h2>How people feel</h2>
+      <p>MIT's summary: people broadly feel they <b>need</b> AI skills and that AI makes them more productive, but also that they are becoming more <b>dependent</b> on it. Whether it actually helps learning got a mixed response. And most people did not like using it as a writing tool.</p>
+      <p>Look for where our class splits from MIT. Is the &ldquo;falling behind classmates&rdquo; worry bigger or smaller here?</p>
+    </div>
+    <div class="panel" data-chart="attitudes"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Rules</p>
+      <h2>Where MIT drew the line</h2>
+      <p>Grammar help, literature search and code were widely accepted. Peer review and drafting whole paragraphs were widely rejected. Everything in between was a shrug: for most tasks the biggest answer was &ldquo;unsure.&rdquo;</p>
+      <p>MIT's report says this spread is exactly why one rule for everyone is so hard to write.</p>
+    </div>
+    <div class="panel" data-chart="research"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 1 &mdash; Concerns</p>
+      <h2>What holds people back</h2>
+      <p>Three quarters of MIT respondents called inaccuracy a <b>major</b> consideration. Society, ethics and the environment were each a major concern for about a third. When people wrote in their own worry, the top one by far was the effect on learning itself.</p>
+    </div>
+    <div class="panel">
+      <div data-chart="concerns"></div>
+      <div data-chart="concern_other" class="stack"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 2 &mdash; Quality of life</p>
+      <h2>How often, campus-wide</h2>
+      <p>Across all of MIT about 40% used generative AI often or very often. Undergraduates were near that average; graduate students were the heaviest users; service and support staff mostly never used it at all.</p>
+    </div>
+    <div class="panel" data-chart="qol_freq"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 2 &mdash; Quality of life</p>
+      <h2>The five sliders</h2>
+      <p>The striking one is <b>optimism</b>: only about a fifth of MIT undergraduates were optimistic about the future because of AI. On <b>replaceable versus capable</b>, undergrads were the one group that leaned <i>replaceable</i>. Yet most said it made their work more <b>efficient</b>, and more felt it improved their work than worsened it.</p>
+      <p>On <b>reliability</b> the verdict was clear: far more people found current systems unpredictable than trustworthy.</p>
+    </div>
+    <div class="panel" data-chart="dims"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Part 2 &mdash; Guidance</p>
+      <h2>Has anyone told you the rules?</h2>
+      <p>MIT undergraduates were the one group who felt well guided: 72% agreed they had adequate guidance. Faculty, staff and graduate students were far less sure. How does Humber compare?</p>
+    </div>
+    <div class="panel" data-chart="guidance"></div>
+  </section>
+
+  <section class="sec">
+    <div class="prose">
+      <p class="eyebrow">Instructor</p>
+      <h2>Housekeeping</h2>
+      <p>Download keeps a copy of the raw answers. Clear wipes them so the next class starts from zero.</p>
+    </div>
+    <div class="panel toolbar">
+      <div class="controls">
+        <button type="button" class="btn" id="download-btn">Download answers (JSON)</button>
+        <button type="button" class="btn danger" id="clear-btn">Clear all responses</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="wrap foot">
+  <p>Questions adapted from <i>Report of MIT's Ad Hoc Committee on AI Use</i>, August 2026, Appendix C. MIT figures are approximate readings of the published charts.</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/store.js"></script>
+<script src="js/survey.js"></script>
+<script src="js/results.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
